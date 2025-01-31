@@ -1,10 +1,12 @@
-body{
-    margin: 0px;
-    padding: 0px;
+body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.Turn{
+
+/* Turn section */
+.Turn {
     color: white;
     width: 100%;
     height: 25vh;
@@ -14,69 +16,90 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    justify-content: center;
     background-color: #252A34;
 }
-#turn{
-    margin: 0px;
+
+#turn {
+    margin: 0;
     color: #FF2E63;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
-.Turn h1{
-    margin: 0px;
+
+.Turn h1 {
+    margin: 0;
+    font-size: clamp(1.2rem, 3vw, 2rem);
 }
-hr{
-    width: 99vw;
-    margin: 0px;
+
+hr {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0;
 }
-.Game-name{
-    width: 100vw;
+
+/* Game name section */
+.Game-name {
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #10141a;
 }
-#turn-for{
+
+#turn-for {
     margin-top: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
-.container{
+
+/* Container section */
+.container {
     width: 100%;
-    height: 75vh;
+    min-height: 75vh;
     position: absolute;
     z-index: 1;
-    top: 154px;
+    top: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #252A34;
 }
-#rapper{
-    margin-top: 60px;
+
+#rapper {
+    margin-top: min(60px, 8vh);
 }
-.rapper{
-    width: 300px;
-    height: 100px;
+
+/* Game grid */
+.rapper {
+    width: min(300px, 90vw);
+    height: min(100px, 30vw);
     display: flex;
 }
-.rapper div{
-    width: 100px;
-    height: 100px;
+
+.rapper div {
+    width: min(100px, 30vw);
+    height: min(100px, 30vw);
     color: white;
-    font-size: 50px;
+    font-size: clamp(1.5rem, 8vw, 3rem);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    background-color:#252A34;
+    border: 1px solid wheat;
+    background-color: #252A34;
+    cursor: pointer;
 }
-.rapper div:hover{
+
+.rapper div:hover {
     background-color: #FF2E63;
 }
-.winner{
+
+/* Winner overlay */
+.winner {
     width: 100%;
     height: 100vh;
-    font-size: 40px;
-    position: relative;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 0;
     display: flex;
     flex-direction: column;
@@ -85,20 +108,29 @@ hr{
     background-color: rgba(0, 0, 0, .5);
 }
 
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    .Turn {
+        height: 20vh;
+    }
+    
+    .container {
+        top: 20vh;
+    }
+    
+    #rapper {
+        margin-top: 20px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width: 1200px) {
+    .rapper {
+        width: 450px;
+        height: 150px;
+    }
+    
+    .rapper div {
+        width: 150px;
+        height: 150px;
+    }
+}
