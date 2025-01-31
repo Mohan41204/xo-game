@@ -1,2 +1,2 @@
 # xo-game
-created using html , css and javascript
+XO-Game created using html,css and javascript
