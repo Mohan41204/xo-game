@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XO GAME</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="Turn">
+        <div class="Game-name">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <hr>
+        <h1 id="turn-for">Turn For</h1>
+        <h1 id="turn">X</h1>
+    </div>
+    <div class="container" id="container">
+        <div class="rapper" id="rapper">
+            <div onclick="desision('divone')" id="divone"></div>
+            <div onclick="desision('divtwo')" id="divtwo"></div>
+            <div onclick="desision('divthree')" id="divthree"></div>
+        </div>
+        <div class="rapper">
+            <div onclick="desision('divfour')" id="divfour"></div>
+            <div onclick="desision('divfive')" id="divfive"></div>
+            <div onclick="desision('divsix')" id="divsix"></div>
+        </div>
+        <div class="rapper">
+            <div onclick="desision('divseven')" id="divseven"></div>
+            <div onclick="desision('diveight')" id="diveight"></div>
+            <div onclick="desision('divnine')" id="divnine"></div>
+        </div>
+    </div>
+    <div class="winner" id="winner"></div>
+    <script src="index.js" ></script>
+</body>
+</html>

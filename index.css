@@ -1,0 +1,104 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.Turn{
+    color: white;
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    background-color: #252A34;
+}
+#turn{
+    margin: 0px;
+    color: #FF2E63;
+}
+.Turn h1{
+    margin: 0px;
+}
+hr{
+    width: 99vw;
+    margin: 0px;
+}
+.Game-name{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #10141a;
+}
+#turn-for{
+    margin-top: 10px;
+}
+.container{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    z-index: 1;
+    top: 154px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252A34;
+}
+#rapper{
+    margin-top: 60px;
+}
+.rapper{
+    width: 300px;
+    height: 100px;
+    display: flex;
+}
+.rapper div{
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color:#252A34;
+}
+.rapper div:hover{
+    background-color: #FF2E63;
+}
+.winner{
+    width: 100%;
+    height: 100vh;
+    font-size: 40px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
